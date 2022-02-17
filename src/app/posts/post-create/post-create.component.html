@@ -1,0 +1,51 @@
+<nz-card class="form-card" style="width: 300px;" nzTitle="Post Creating Form">
+	<form
+		nz-form
+		[formGroup]="postForm"
+		class="login-form"
+		(ngSubmit)="submitForm()"
+	>
+		<nz-form-item>
+			<nz-form-control nzErrorTip="Please input Post Title!">
+				<input
+					type="text"
+					nz-input
+					formControlName="title"
+					placeholder="Post Title"
+				/>
+			</nz-form-control>
+		</nz-form-item>
+		<nz-form-item>
+			<nz-form-control nzErrorTip="Please input Post Content!">
+				<textarea
+					nz-input
+					formControlName="content"
+					placeholder="Post Content"
+					placeholder="post Content . . . "
+					[nzAutosize]="{ minRows: 2, maxRows: 6 }"
+				></textarea>
+			</nz-form-control>
+		</nz-form-item>
+
+		<button
+			nz-button
+			class="login-form-button login-form-margin"
+			[nzType]="'primary'"
+		>
+			Create Post
+		</button>
+	</form>
+</nz-card>
+
+<!-- <input nz-input placeholder="Post Title" [(ngModel)]="title" />
+<br />
+<br />
+<textarea
+	nz-input
+	placeholder="Content of post . . . "
+	[nzAutosize]="{ minRows: 2, maxRows: 6 }"
+	[(ngModel)]="content"
+></textarea>
+<button nz-button nzType="primary" (click)="onCreatePost()">
+	Create Post
+</button> -->

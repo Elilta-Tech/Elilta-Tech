@@ -1,0 +1,13 @@
+.nz-header {
+	height: 60px;
+	background-color: rgb(0, 0, 99);
+	width: 100%;
+	padding: 10px 15px;
+}
+
+h3 {
+	color: aliceblue;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	font-size: 25px;
+}
